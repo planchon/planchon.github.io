@@ -123,4 +123,6 @@ class Window {
 new Window("about", "about_button")
 new Window("theme", "theme_button")
 
+window.onscroll = function () { window.scrollTo(0, 0); };
+
 // dragElement(document.getElementById("about"))
