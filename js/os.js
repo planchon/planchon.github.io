@@ -1,3 +1,11 @@
+console.log("------- planchon.io -------")
+console.log("     you can hire me !")
+console.log(" mailto: paul@planchon.io")
+console.log('---------------------------')
+
+let ZINDEX_INDEX = 1
+let LAST_ZINDEX_OBJ = null
+
 class Window {
     constructor(id, button) {
         this.id = id;
@@ -18,6 +26,8 @@ class Window {
         this.touch_startDrag = this.touch_startDrag.bind(this)
         this.touch_elementDrag = this.touch_elementDrag.bind(this)
         this.touch_closeDragEvent = this.touch_closeDragEvent.bind(this)
+
+        this.changeZIndex = this.changeZIndex.bind(this)
 
         this.setup()
     }
@@ -43,6 +53,13 @@ class Window {
         }
     }
 
+    changeZIndex() {
+        if (LAST_ZINDEX_OBJ != this) {
+            this.el.style.zIndex = ZINDEX_INDEX++;
+        }
+        LAST_ZINDEX_OBJ = this;
+    }
+
     touch_startDrag(e) {
         e = e.targetTouches[0]
 
@@ -54,7 +71,6 @@ class Window {
     }
 
     touch_closeDragEvent() {
-        this.el.style.zIndex = 0;
         document.ontouchend = null;
         document.ontouchmove = null;
         document.ontouchstart = null;
@@ -70,9 +86,7 @@ class Window {
         this.lastX = e.clientX
         this.lastY = e.clientY
 
-        this.el.style.zIndex = 10;
-
-        console.log(this.el.offsetLeft)
+        this.changeZIndex()
 
         if (this.constrain_window(this.x, this.y)) {
             this.el.style.top  = this.y + "px"
@@ -92,7 +106,7 @@ class Window {
     }
 
     mouse_closeDragEvent(e) {
-        this.el.style.zIndex = 0;
+        this.el.style.zIndex = 1;
         document.onmouseup = null;
         document.onmousemove = null;
     }
@@ -107,7 +121,7 @@ class Window {
         this.lastX = e.clientX
         this.lastY = e.clientY
 
-        this.el.style.zIndex = 10;
+        this.changeZIndex()
 
         if (this.constrain_window(this.x, this.y)) {
             this.el.style.top  = this.y + "px"
@@ -120,9 +134,46 @@ class Window {
     }
 }
 
-new Window("about", "about_button")
-new Window("theme", "theme_button")
+class Terminal {
+    constructor(id, commands) {
+        this.id = id;
+        this.el = document.getElementById(id)
+        this.textarea = document.getElementById(commands)
+        this.command = ""
 
-window.onscroll = function () { window.scrollTo(0, 0); };
+        this.enter_key_handle = this.enter_key_handle.bind(this)
+        this.preventDefault = this.process_command.bind(this)
+
+        this.setup()
+    }
+    
+    setup() {
+        this.textarea.onkeypress = this.enter_key_handle
+    }
+
+    enter_key_handle(e) {
+        var key = e.keyCode
+        if (key === 13) {
+            this.command = this.textarea.value
+            this.textarea.value = ''
+            this.process_command()
+        }
+    }
+
+    process_command() {
+        console.log("processing" + this.command)
+    }
+}
+
+
+new Window("about", "about_button")
+new Window("help", "help_button")
+new Window("terminal", "terminal_button")
+
+new Terminal("terminal", "commands")
+
+let heure = document.getElementById("heure")
+let date = new Date()
+heure.innerHTML = date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes()
 
 // dragElement(document.getElementById("about"))
