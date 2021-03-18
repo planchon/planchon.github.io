@@ -8,7 +8,6 @@
 | |                                         
 |_| paul planchon: paul@planchon.io                                         
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +25,6 @@
         <div id="about_button" class="header_button">
             <span class="under">A</span>bout
         </div>
-        <div id="terminal_button" class="header_button">
-            <span class="under">T</span>erminal
-        </div>
         <div id="help_button" class="header_button last">
             <span class="under">H</span>elp
         </div>
@@ -37,7 +33,75 @@
         </div>
     </header>
     <main>
-        <div id="about" class="container" style="visibility: visible; top: 40px; left: 20px;">
+        <div id="sociaux" class="container" style="visibility: hidden; top: 40px; left: 20px;">
+            <div class="header">
+                <h4>Réseaux (a)sociaux</h4>
+                <div class="cross"></div>
+            </div>
+            <div class="inner">
+                <div class="folder" style="height: 200px;">
+                    <ul>
+                        <li onclick="window.open('https:\/\/github.com/planchon')">
+                            <div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
+                            </div>
+                            <span>Github</span>
+                        </li>
+                        <li onclick="window.open('https:\/\/github.com/planchon')">
+                            <div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
+                            </div>
+                            <span>Gitlab</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li onclick="window.open('https:\/\/instagram.com/paulplanchon')">
+                            <div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAMAAAAxgAaOAAAANlBMVEUAAAAAAAD049SidmcuQUjpyrDAwMDRu7OCXlKAgID////uO1/VoHm4wcRui8uQz6b81kjYxLIHB7ByAAAAAXRSTlMAQObYZgAAALdJREFUKM99kYkSgjAQxXwgtOVQ+f+fNVvWMrVAmOHYNAzHo0LwuEIhhKhmlZRs34PQmkHFUQAOBGY9lw2iVZl86hNkmD/vVzghCtmb7VtibWVcWGmESSpW2B9pMligArbrBjal0UAncW3b0mF3uSccUpK2PFsGb0XxNLiF0FXLDLlOK3pEqmq1S1rT+m/NUro9a0lv2vWwW9uCW1T7zC4Tk5v3dTnkv6/6WxXZIUFyATpAHrQj+AK63wmEY308vwAAAABJRU5ErkJggg==">
+                            </div>
+                            <span>Instagram</span>
+                        </li>
+                        <li onclick="window.open('https:\/\/github.com/planchon')">
+                            <div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
+                            </div>
+                            <span>Twitter</span>
+                        </li>
+                        <li onclick="window.open('https:\/\/www.linkedin.com/in/paul-planchon-27756a193/')">
+                            <div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
+                            </div>
+                            <span>Linkedin</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="projets" class="container" style="visibility: hidden; top: 40px; left: 20px;">
+            <div class="header">
+                <h4>Projets</h4>
+                <div class="cross"></div>
+            </div>
+            <div class="inner">
+                <div class="folder" style="height: 200px;">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
+                            </div>
+                            <span>PureSync</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAHlBMVEUAAADa3u0AAAD///9i8pP/46/+iZ2SkpLynI34x75jdbakAAAAAXRSTlMAQObYZgAAAM5JREFUGNOd0TEOwiAUBmDSG1BqugI1UUdaL1Al7g71AKZ2r0dw6uxUbuv/HjZo3CRp0o8fHoQnhMisFmnA8x+21jLoZ8bXnWUsu51oPGCZa3gXwhTCE8ZEWn8jKx3rrf3AdvXiE1mpPNpEOzfq6MLDSpUl2Voj/bFxiMc7bFCpqG2FuMzZfFKGmPJkvtGvN9j3lWOfQ7025UqpZu/fzhA7ubp4LNBkxBLufbQwiNltThQVYnjwPjpzizVbGHI39IflxQ37GmNuIfzRxtSPF7fLOHFDSnn4AAAAAElFTkSuQmCC">
+                            </div>
+                            <span>Music Map</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="container" style="visibility: visible; top: 50px; left: 30px;">
             <div class="header">
                 <h4>Who ??</h4>
                 <div class="cross"></div>
@@ -51,8 +115,8 @@
                     <p>Étudiant de 21 ans en mathématiques et informatique à CyTech</p>
                     <p>Président du BDE le jour, moniteur de voile durant les vacances, bidouilleur de l'extreme à la nuit tombée.</p>
                     <p>Auto-didacte et perceverant : je me passione pour tout ce que je peux comprendre et jouer avec. L'informatique et les maths sont parfaits pour ça.</p>
-                    <p>Je suis en CDD pour une entreprise parisienne pour laquel je developpe PureSync (voir dans les "programmes")</p>
-                    <p>Je suis disponible pour tous vos projets de dev-web!</p>
+                    <p>Je suis en CDD pour une entreprise parisienne pour laquel je developpe PureSync (voir dans le dossier projets 😉)</p>
+                    <p class="bold center">Je suis disponible pour vos projets de dev-web!</p>
                 </div>
             </div>
         </div>
@@ -68,7 +132,8 @@
                 </div>
                 <div class="text">
                     <p>Restons calme.</p>
-                    <p>Mon site n'est qu'une vulgère "simulation" d'un vieux OS. Amusez-vous à toucher aux menus, rentrer des commandes dans le terminal, essayer de faire planter l'OS.</p>
+                    <p>Mon site n'est qu'une vulgère "simulation" d'un vieux OS.</p>
+                    <p>Comme sur votre ordinateur, baladez vous, tester tout (vous ne pouvez rien casser). Have fun !</p>
                     <p>Qui sais ? Peut-être vous en apprendrez plus sur moi </p>
                 </div>
             </div>
@@ -87,6 +152,25 @@
                 </div>
             </div>
         </div>
+        <div id="secret" class="container" style="visibility: hidden; top: 50px; left: 30px;">
+            <div class="header">
+                <h4>Top secret 🤫</h4>
+                <div class="cross"></div>
+            </div>
+            <div class="inner">
+                <h4 class="center" style="margin: 40px 0 40px 0; ">arrive bientôt!</h4>
+            </div>
+        </div>
+        <div class="upper">
+            <ul>
+                <li id="secret_button">
+                    <div class="image">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
+                    </div>
+                    <span>top secret</span>
+                </li>
+            </ul>
+        </div>
         <div class="footer">
             <ul>
                 <li onclick="window.open('/assets/cv.pdf')">
@@ -97,39 +181,22 @@
                 </li>
             </ul>
             <ul>
-                <li>
+                
+                <li id="sociaux_button">
                     <div class="image">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
                     </div>
-                    <span>PureSync</span>
+                    <span>Réseau sociaux</span>
                 </li>
-                <li>
+                <li id="projets_button">
                     <div class="image">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAHlBMVEUAAADa3u0AAAD///9i8pP/46/+iZ2SkpLynI34x75jdbakAAAAAXRSTlMAQObYZgAAAM5JREFUGNOd0TEOwiAUBmDSG1BqugI1UUdaL1Al7g71AKZ2r0dw6uxUbuv/HjZo3CRp0o8fHoQnhMisFmnA8x+21jLoZ8bXnWUsu51oPGCZa3gXwhTCE8ZEWn8jKx3rrf3AdvXiE1mpPNpEOzfq6MLDSpUl2Voj/bFxiMc7bFCpqG2FuMzZfFKGmPJkvtGvN9j3lWOfQ7025UqpZu/fzhA7ubp4LNBkxBLufbQwiNltThQVYnjwPjpzizVbGHI39IflxQ37GmNuIfzRxtSPF7fLOHFDSnn4AAAAAElFTkSuQmCC">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
                     </div>
-                    <span>Music Map</span>
+                    <span>Projets</span>
                 </li>
+                
             </ul>
-            <ul>
-                <li onclick="window.open('https:\/\/github.com/planchon')">
-                    <div class="image">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
-                    </div>
-                    <span>Github</span>
-                </li>
-                <li onclick="window.open('https:\/\/instagram.com/paulplanchon')">
-                    <div class="image">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAMAAAAxgAaOAAAANlBMVEUAAAAAAAD049SidmcuQUjpyrDAwMDRu7OCXlKAgID////uO1/VoHm4wcRui8uQz6b81kjYxLIHB7ByAAAAAXRSTlMAQObYZgAAALdJREFUKM99kYkSgjAQxXwgtOVQ+f+fNVvWMrVAmOHYNAzHo0LwuEIhhKhmlZRs34PQmkHFUQAOBGY9lw2iVZl86hNkmD/vVzghCtmb7VtibWVcWGmESSpW2B9pMligArbrBjal0UAncW3b0mF3uSccUpK2PFsGb0XxNLiF0FXLDLlOK3pEqmq1S1rT+m/NUro9a0lv2vWwW9uCW1T7zC4Tk5v3dTnkv6/6WxXZIUFyATpAHrQj+AK63wmEY308vwAAAABJRU5ErkJggg==">
-                    </div>
-                    <span>Instagram</span>
-                </li>
-                <li onclick="window.open('https:\/\/www.linkedin.com/in/paul-planchon-27756a193/')">
-                    <div class="image">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgBAMAAADgTEWFAAAAJFBMVEUAAAD///8AAADT09MFPi0GXEMDKR0GXUQDLyECGBLCwsKFhYUJtga+AAAAAXRSTlMAQObYZgAAAPBJREFUGNNF0DFrhDAUwPFw30ClFDpJMKZrcOxUiKZd5aJ2FJITxyua6xo4qNDVs+3Yr9Ab78tdEgP3ph+P/1seAGATAz8bXEIvtL/nq9E+IkHp+BiRKAvgjRyaWzyZIAvqMgaYTVFmfPcOkq6etPHTP0AzGxudXc4hwAvdyeaLRCFI+MLrN22J8ooW0jFdxPZ123oOnkjIrhpb8mD4Q0/Dp2sTOs601n+WilW9Wtv+o5DStfg4yINvRZ6r79a2+NS8HOna3oh3PVfzsz1LmSqEdFvYMEqVOwOw639ntzVmB6Fta53mLQlj/zcNrZzto66MvEpn6YObMAAAAABJRU5ErkJggg==">
-                    </div>
-                    <span>Linkedin</span>
-                </li>
-            </ul>
+            
         </div>
     </main>
 </body>

@@ -168,9 +168,13 @@ class Terminal {
 
 new Window("about", "about_button")
 new Window("help", "help_button")
-new Window("terminal", "terminal_button")
+// new Window("terminal", "terminal_button")
+new Window("sociaux", "sociaux_button")
+new Window("projets", "projets_button")
+new Window("secret", "secret_button")
 
-new Terminal("terminal", "commands")
+
+// new Terminal("terminal", "commands")
 
 let heure = document.getElementById("heure")
 let date = new Date()

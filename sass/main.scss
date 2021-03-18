@@ -108,14 +108,19 @@ main {
                 }
             }
 
-
             .text {
                 padding-top: 150px;
             }
+
         }
 
-
-
+        .folder {
+            z-index: 0;
+            overflow-y: scroll;
+            border: solid 1px black;
+            background: rgb(221, 221, 221);
+            padding: 10px 0 0 0;
+        }
     }
 
     .cross {
@@ -172,50 +177,67 @@ main {
     position: absolute;
     left: 10px;
     bottom: 10px;
+}
 
-    ul {
+.upper {
+    z-index: 0;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+.bold {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.center {
+    text-align: center;
+}
+
+ul {
+    border: none;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+    li {
+        cursor: url(../images/click.svg), auto!important;
+        align-items: center;
         display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        height: 70px;
         flex-wrap: wrap;
+        justify-content: center;
+        width: 76px;
 
-        li {
-            cursor: url(../images/click.svg), auto!important;
-            align-items: center;
+        .image {
+            height: 35px;
             display: flex;
-            height: 70px;
-            flex-wrap: wrap;
+            align-items: flex-end;
             justify-content: center;
-            width: 76px;
+            margin-bottom: 7px;
 
-            .image {
-                height: 35px;
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
-                margin-bottom: 7px;
-    
-                img {
-                    display: block;
-                    max-height: 35px;
-                    margin: auto;
-                }
+            img {
+                display: block;
+                max-height: 35px;
+                margin: auto;
             }
+        }
 
-            span {
-                background: rgb(216, 215, 231);
-                border-color: rgb(216, 215, 231);
-                width: 64px;
-                font-family: Arial;
-                padding: 0 2px;
-                border: 1px solid #effbfe;
-                user-select: none;
-                font-size: 12px;
-                text-align: center;
-            }
-    
+        span {
+            background: rgb(216, 215, 231);
+            border-color: rgb(216, 215, 231);
+            width: 64px;
+            font-family: Arial;
+            padding: 0 2px;
+            border: 1px solid #effbfe;
+            user-select: none;
+            font-size: 12px;
+            text-align: center;
         }
 
     }
+
 }

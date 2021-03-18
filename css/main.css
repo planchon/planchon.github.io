@@ -135,6 +135,14 @@ main .container .inner .text {
   padding-top: 150px;
 }
 
+main .container .folder {
+  z-index: 0;
+  overflow-y: scroll;
+  border: solid 1px black;
+  background: #dddddd;
+  padding: 10px 0 0 0;
+}
+
 main .cross {
   width: 15px;
   height: 15px;
@@ -190,7 +198,24 @@ main .cross {
   bottom: 10px;
 }
 
-.footer ul {
+.upper {
+  z-index: 0;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+
+.bold {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  border: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -203,7 +228,7 @@ main .cross {
           flex-wrap: wrap;
 }
 
-.footer ul li {
+ul li {
   cursor: url(../images/click.svg), auto !important;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -224,7 +249,7 @@ main .cross {
   width: 76px;
 }
 
-.footer ul li .image {
+ul li .image {
   height: 35px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -241,13 +266,13 @@ main .cross {
   margin-bottom: 7px;
 }
 
-.footer ul li .image img {
+ul li .image img {
   display: block;
   max-height: 35px;
   margin: auto;
 }
 
-.footer ul li span {
+ul li span {
   background: #d8d7e7;
   border-color: #d8d7e7;
   width: 64px;
